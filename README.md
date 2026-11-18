@@ -23,4 +23,3 @@ Abrir esta carpeta (la que contiene `settings.gradle.kts`) en Android Studio. Es
 ## Arquitectura
 `MainActivity` contiene `NavHost` y `NavController`. Las pantallas reciben estado y lambdas. `RecordatoriosViewModel` usa `MutableStateFlow` internamente, publica `StateFlow`, y ejecuta operaciones asíncronas en `viewModelScope`. El repositorio se consume mediante la interfaz `RecordatoriosRepository`; `RepositorioEnMemoria` mantiene los registros simulados. `collectAsStateWithLifecycle` observa el estado de forma consciente del ciclo de vida.
 
-**Nota:** las capturas deben tomarse desde Android Studio y el emulador, no se incluyen imágenes simuladas como evidencias. Compilación pendiente de verificar en el entorno local.
